@@ -5,7 +5,6 @@
   <title>FlopShop — Магазин Робуксов</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
-    
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -137,6 +136,21 @@
     </nav>
     <div class="line"></div>
   </header>
+
+  <!-- Контент -->
+  <div class="container">
+    <h2>Выберите количество Робуксов</h2>
+    <input type="range" min="0" max="1000" value="500" class="slider" id="robuxSlider">
+    <div class="output"><span id="robuxValue">500</span> Robux</div>
+    <button class="btn" onclick="showDiscord()">Купить</button>
+
+    <div id="discordBtn">
+      <a href="https://discord.gg/Q9WhnFYdUK" target="_blank">
+        <button class="btn">Перейти в Discord</button>
+      </a>
+    </div>
+  </div>
+
   <!-- Модальное окно -->
   <div id="welcomeModal" class="modal">
     <div class="modal-content">
