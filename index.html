@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -54,3 +55,61 @@
   </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>FlopShop — Загрузка...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fffaf4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      color: #5d4037;
+    }
+
+    .loader {
+      text-align: center;
+    }
+
+    .spinner {
+      border: 6px solid #eee;
+      border-top: 6px solid #a1887f;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .text {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  </style>
+  <script>
+    // Переход на main.html через 2 секунды
+    setTimeout(() => {
+      window.location.href = "main.html";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <div class="loader">
+    <div class="spinner"></div>
+    <div class="text">Загрузка FlopShop...</div>
+  </div>
+</body>
+</html>
+>>>>>>> 1814ccc740e0bf9364cfb579aef9fff3cc03ef4f
